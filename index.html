@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rissan Markino — Profil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #071029;
+      --accent1: #06b6d4;
+      --accent2: #7c3aed;
+      --card: rgba(255,255,255,0.06);
+      --muted: rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(124,58,237,0.18), transparent),
+                  radial-gradient(1000px 500px at 90% 90%, rgba(6,182,212,0.12), transparent),
+                  linear-gradient(180deg, var(--bg1) 0%, #0b1220 100%);
+      color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:36px;
+    }
+
+    .wrap{width:100%;max-width:1100px;display:grid;grid-template-columns:340px 1fr 300px;gap:22px;align-items:start}
+
+    .card{background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.06);padding:20px;border-radius:14px;box-shadow:0 12px 40px rgba(2,6,23,0.6)}
+
+    .left .avatar{width:120px;height:120px;border-radius:20px;background:linear-gradient(135deg,var(--accent2),var(--accent1));display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;margin-bottom:14px}
+    h1{margin:0;font-size:22px}
+    p.sub{margin:4px 0 0 0;color:var(--muted);font-size:13px}
+
+    .meta{margin-top:16px;font-size:14px;color:var(--muted)}
+    .meta b{display:inline-block;width:72px;color:inherit}
+
+    .badge{display:inline-block;background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:8px 12px;border-radius:999px;font-weight:700;color:#061224;margin-top:12px}
+
+    /* center content */
+    .main{display:flex;flex-direction:column;gap:14px}
+    .headline{display:flex;align-items:center;justify-content:space-between}
+    .headline .title{font-size:18px;font-weight:700}
+    .about{color:var(--muted);line-height:1.6}
+
+    /* right column: contact */
+    .contact-col{display:flex;flex-direction:column;gap:12px}
+    .contact-card{display:flex;flex-direction:column;gap:10px;padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent)}
+    .contact-row{display:flex;align-items:center;gap:12px}
+    .icon-wrap{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    .btn{padding:10px 14px;border-radius:12px;border:0;font-weight:700;cursor:pointer;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+    .btn-primary{background:linear-gradient(90deg,var(--accent2),var(--accent1));color:#061224}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    .socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+
+    /* responsive */
+    @media (max-width:1000px){.wrap{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card left">
+      <div class="avatar">RM</div>
+      <h1>Rissan Markino</h1>
+      <p class="sub">Pelajar — SMAN 14 PEKANBARU</p>
+      <div class="meta">
+        <div><b>Kelas</b>: 11.2</div>
+        <div style="margin-top:6px"><b>Hobi</b>: Salto belakang</div>
+      </div>
+      <div class="badge">Status: Pelajar</div>
+
+      <div style="margin-top:12px">
+        <a class="btn btn-primary" href="https://instagram.com/rssnn.mrkn23" target="_blank" rel="noopener noreferrer" title="Instagram">
+          @rssnn.mrkn23
+        </a>
+      </div>
+
+      <!-- 🔗 Tombol Menuju Halaman About Me -->
+      <div style="margin-top:16px;">
+        <a class="btn btn-outline" href="about.html">Tentang Saya ➜</a>
+      </div>
+    </div>
+
+    <div class="card main">
+      <div class="headline">
+        <div class="title">Tentang Saya</div>
+        <div style="color:var(--muted)">Selamat datang di profil saya</div>
+      </div>
+      <div class="about">
+        Halo! Saya <strong>Rissan Markino</strong>, pelajar di <em>SMAN 14 Pekanbaru</em>, kelas <strong>11.2</strong>. Hobi saya adalah melakukan <strong>salto belakang</strong>. Saya suka tantangan, olahraga, dan terus berlatih untuk meningkatkan kemampuan.
+      </div>
+
+      <div style="margin-top:14px;display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://instagram.com/rssnn.mrkn23" target="_blank" rel="noopener noreferrer">Lihat Instagram</a>
+        <a class="btn btn-outline" href="https://wa.me/6283184063701" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="card contact-col">
+      <div class="contact-card">
+        <div style="font-weight:700">Kontak Cepat</div>
+        <div style="color:var(--muted);font-size:13px;margin-top:6px">Hubungi saya melalui Instagram atau WhatsApp</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
